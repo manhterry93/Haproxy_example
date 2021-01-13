@@ -8,5 +8,5 @@ services:
         restart: always
         hostname: haproxy
         ports: 
-            - "8080:8080"   # open port 8080 public -> 80
+            - "8080:80"   # open port 8080 public -> 80
             - "443:443"     # Open port 443 public -> 443
