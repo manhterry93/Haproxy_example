@@ -1,0 +1,12 @@
+version: "3.4"
+
+services:
+    xtlab-haproxy:
+        build:  
+            context: .
+        container_name: haproxy
+        restart: always
+        hostname: haproxy
+        ports: 
+            - "8080:8080"   # open port 8080 public -> 80
+            - "443:443"     # Open port 443 public -> 443
